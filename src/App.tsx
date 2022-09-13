@@ -15,7 +15,7 @@ function App() {
         <>
             <div
                 onMouseMove={handleMouseMove}
-                className="relative w-full min-h-screen bg-[#888FC7] overflow-hidden"
+                className="relative w-full min-h-screen max-h-screen bg-[#888FC7] overflow-hidden"
             >
                 <div className="absolute h-full w-full z-20 flex items-center justify-center">
                     <div
