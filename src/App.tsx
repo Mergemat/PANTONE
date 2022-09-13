@@ -15,7 +15,7 @@ function App() {
         <>
             <div
                 onMouseMove={handleMouseMove}
-                className="w-full min-h-screen bg-[#888FC7]"
+                className="relative w-full min-h-screen bg-[#888FC7] overflow-hidden"
             >
                 <div className="absolute h-full w-full z-20 flex items-center justify-center">
                     <div
@@ -23,9 +23,9 @@ function App() {
                             top: `calc(50% - ${coords.y / 100}px)`,
                             left: `calc(50% - ${coords.x / 100}px)`,
                         }}
-                        className="absolute -translate-x-1/2 -translate-y-1/2 inline-flex w-2/3 h-[500px] md:w-[538px] md:h-[638px] items-end justify-center backdrop-blur-xl pt-96 bg-white bg-opacity-5 shadow border rounded-3xl border-white border-opacity-10 overflow-hidden"
+                        className="absolute -translate-x-1/2 -translate-y-1/2 inline-flex w-3/4 h-[400px] md:w-[538px] sm:h-[638px] items-end justify-center backdrop-blur-xl pt-96 bg-white bg-opacity-5 shadow border rounded-3xl border-white border-opacity-10 overflow-hidden"
                     >
-                        <div className="inline-flex flex-col w-full items-start justify-end pl-3 pt-4 pb-9 bg-[#cacff8]">
+                        <div className="inline-flex flex-col  w-full items-start justify-end pl-3 pt-4 bg-[#cacff8]">
                             <p className="text-4xl font-bold text-black">
                                 PANTONE
                             </p>
@@ -43,12 +43,12 @@ function App() {
                         top: `calc(50% - ${coords.y / 20}px)`,
                         left: `calc(50% - ${coords.x / 20}px)`,
                     }}
-                    className="absolute flex w-full lg:w-1/2 h-3/4  -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
+                    className="absolute flex w-full md:w-1/2 h-3/4  -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
                 >
                     <div
-                        className={`w-72 h-72 absolute left-0 bg-gradient-to-bl from-indigo-400 to-gray-500 shadow rounded-full`}
+                        className={`w-[50vw] h-[50vw] md:w-[30vw] md:h-[30vw] lg:h-[20vw] lg:w-[20vw] absolute -left-10 bg-gradient-to-bl from-indigo-400 to-gray-500 shadow rounded-full`}
                     />
-                    <div className="w-72 h-72 absolute -right-10 bottom-10 bg-gradient-to-bl from-gray-600 to-gray-800 shadow rounded-full" />
+                    <div className="w-[50vw] h-[50vw] md:w-[30vw] md:h-[30vw] lg:h-[20vw] lg:w-[20vw] absolute -right-10 bottom-10 bg-gradient-to-bl from-gray-600 to-gray-800 shadow rounded-full" />
                 </div>
             </div>
         </>
